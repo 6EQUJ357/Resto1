@@ -5,7 +5,7 @@ import './App.css';
 // import Home from "./components/home";
 // import Galary from "./components/galary";
 // import Error from "./components/error";
-// import Nav from "./components/nav"
+ import Nav from "./components/nav"
 
 const Home = lazy(()=> import("./components/home"))
 const Galary = lazy(()=> import("./components/galary"))
