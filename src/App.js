@@ -67,7 +67,7 @@ import RestaurantTable from "./restaurant_APP/restaurant_components/restaurantTa
 import RestaurantCart from "./restaurant_APP/restaurant_components/restaurantCart"
 import RestaurantLogIn from "./restaurant_APP/restaurant_components/restaurantLogIn"
 import RestaurantCreateAccount from "./restaurant_APP/restaurant_components/restaurantCreateAccount"
-import RestaurantError from "./restaurant_APP/restaurant_components/restaurantError"
+//import RestaurantError from "./restaurant_APP/restaurant_components/restaurantError"
 
 
 const App = () => {
@@ -108,7 +108,7 @@ const App = () => {
                   <Route path='/cart' element = {< RestaurantCart/>}/>
                   <Route path='/login' element = {<RestaurantLogIn />}/>   
                   <Route path='/createAccount' element = {<RestaurantCreateAccount />}/>  
-                  <Route path='*' element = {<RestaurantError />}/> 
+                  {/* <Route path='*' element = {<RestaurantError />}/>  */}
 
                 </Routes>
               </Suspense>
