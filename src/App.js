@@ -4,7 +4,7 @@ import './App.css';
 
 import Home from "./components/home";
 import Galary from "./components/galary";
-import Error from "./components/error";
+import Errorr from "./components/error";
  import Nav from "./components/nav"
 
 
@@ -15,10 +15,11 @@ function App() {
       <h1> home component...</h1>
       <BrowserRouter>
       <Nav/>
+      
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/galary" element={<Galary />}/>
-         
+         <Route path="*" element ={<Errorr/>}/>
 
         </Routes>
       </BrowserRouter>
