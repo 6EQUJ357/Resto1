@@ -7,19 +7,18 @@ import Galary from "./components/galary";
 import Error from "./components/error";
  import Nav from "./components/nav"
 
-// const Home = lazy(()=> import("./components/home"))
-// const Galary = lazy(()=> import("./components/galary"))
-// const Error = lazy(()=> import("./components/error"))
+
 
 function App() {
   return (
     <div>
+      <h1> home component...</h1>
       <BrowserRouter>
       <Nav/>
         <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/galary" element={<Galary />}/>
-          <Route path="*" element={<Error />}/> 
+         
 
         </Routes>
       </BrowserRouter>
