@@ -1,11 +1,22 @@
-import logo from './logo.svg';
+import {BrowserRouter, Routes, Route} from "react-router-dom"
 import './App.css';
+import Home from "./components/home";
+import Galary from "./components/galary";
+import Error from "./components/error";
+import Nav from "./components/nav"
 
 function App() {
   return (
     <div>
-      <h1>hello world...</h1>
-      <p>the universe is getting cold...</p>
+      <BrowserRouter>
+      <Nav/>
+        <Routes>
+          <Route path="/" element={<Home />}/>
+          <Route path="/galary" element={<Galary />}/>
+          <Route path="/error" element={<Error />}/>
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

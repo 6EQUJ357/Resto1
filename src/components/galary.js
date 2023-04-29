@@ -1,6 +1,6 @@
 import React from 'react'
 
-const galary = () => {
+const Galary = () => {
   return (
     <div>
         <h1>nav component...</h1>
@@ -8,4 +8,4 @@ const galary = () => {
   )
 }
 
-export default galary
+export default Galary
